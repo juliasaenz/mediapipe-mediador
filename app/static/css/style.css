@@ -1,0 +1,28 @@
+.icono{
+    vertical-align: baseline;
+    line-height: normal;
+    font-size: 1.2rem;
+    margin-right: 0.2rem;   
+}
+
+.icono-grande{
+    font-size: 1.5rem;
+}
+
+.nav-link{
+    font-size: 1rem;
+    vertical-align: baseline;
+}
+
+.contacto{
+    text-decoration: none;
+    color: var(--bs-success);
+}
+
+#main {
+    height: 75vh;
+}
+
+#controls {
+    height: 100%;
+}

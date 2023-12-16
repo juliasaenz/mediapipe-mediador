@@ -1,8 +1,15 @@
+# Seteo de la aplicación
 from flask import Flask
+from views import set_views
 
-app = Flask(__name__)
+
+def create_app():
+    """ Inicializa la aplicación web, configura las rutas """
+    app = Flask(__name__, static_folder="static")
+    set_views(app)
+    # acá va cualquier otro set que necesite
+
+    return app
 
 
-@app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+app = create_app()
